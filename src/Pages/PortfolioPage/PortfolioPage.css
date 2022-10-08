@@ -1,0 +1,14 @@
+.pp-container {
+  text-align: center;
+  margin: 100px;
+}
+
+.pp-container h1 {
+  font-size: 50px;
+}
+
+@media (max-width: 1000px) {
+  .pp-container h1 {
+    font-size: 20px;
+  }
+}

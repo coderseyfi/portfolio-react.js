@@ -1,0 +1,27 @@
+.footer-container {
+  text-align: center;
+}
+.footer-nav-container,
+.footer-navigation,
+.footer-socials {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin: 50px auto;
+}
+
+.footer-navigation {
+  width: 30%;
+}
+
+.footer-socials {
+  width: 15%;
+}
+
+.footer-nav-item,
+.footer-social-icon {
+  text-decoration: none;
+  color: var(--light);
+  margin: 10px;
+}

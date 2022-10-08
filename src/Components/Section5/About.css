@@ -1,0 +1,67 @@
+.about-me-container {
+  text-align: center;
+}
+
+.about-me-content {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  margin: 50px auto;
+  gap: 50px;
+  max-width: 1200px;
+}
+
+.about-me-avatar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 600px;
+  width: 400px;
+  background-color: rgb(18, 18, 18);
+  filter: grayscale(10);
+  transition: 0.4s;
+}
+
+.about-me-avatar img {
+  height: 200px;
+  width: 200px;
+  transition: 0.4s;
+}
+
+.about-me-avatar p {
+  margin: 10px;
+  display: none;
+  transition: 0.4s;
+}
+.about-me-avatar:hover {
+  filter: grayscale(0);
+  border: 1px solid var(--primary);
+}
+
+.about-me-avatar:hover p {
+  display: block;
+}
+
+.about-me-avatar:hover img {
+  height: 380px;
+  width: 380px;
+}
+
+@media (max-width: 1000px) {
+  .about-me-content {
+    width: 90%;
+    height: auto;
+  }
+
+  .about-me-avatar {
+    filter: grayscale(0);
+    border: 1px solid var(--primary);
+  }
+
+  .about-me-avatar p {
+    display: block;
+  }
+}
